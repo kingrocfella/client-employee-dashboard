@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+ 
+ 
+  <script>
+      $(document).ready(function(){
+        
+        $(document).ready(function(){
+            
+            $("#signup").submit(function(){
+                
+                var fname = $("#firstname").val();
+                var lname = $("#lastname").val();
+                var phone = $("#phoneno").val();
+                
+                if (!isNaN(fname) || !isNaN(lname)){
+                    $("#error1").empty();
+                    $("#error").text("Numeric Values not allowed as names");
+                    return false;
+                }
+                else if (isNaN(phone)){
+                    $("#error1").empty();
+                    $("#error").text("Only Numeric Values are allowed as Phone Numbers!");
+                    return false;
+                }
+                
+            });
+    
+        });
+
+    });
+  
+  </script>
+</head>
+<body>
+
+<div class="container">
+
+    <div id = "logo"><img src = "logo.jpg" class="img-responsive center-block"/>
+        <h3>Login</h3>
+    </div>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a data-toggle="tab" href="#signup">Sign Up</a></li>
+    <li><a data-toggle="tab" href="#signin">Sign In</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="signup" class="tab-pane fade in active">
+      <h5>New User? Sign Up for Free!</h5>
+      <p id = "error"></p>
+      <p style = "color: red;" id = "error1">Incorrect Email or Password!</p>
+    <form class="form-horizontal" id = "signup" action = "clientsignup.php" method="POST">
+        <div class="form-group">
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname" required>  
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname" required>  
+            </div>
+            <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="Email Address" name="email" required>
+            </div>
+            <div class="col-sm-12">
+                <input type="text" class="form-control" id="phoneno" placeholder="Phone Number" name="phonenumber" required>
+            </div>
+            <div class="col-sm-12">
+                <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="form-group">        
+                <div class="col-sm-offset-1 col-sm-10">
+                  <button type="submit" class="btn btn-default"><b>GET STARTED</b></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    <div id="signin" class="tab-pane fade">
+            <h5>Already a user? Sign in!</h5>
+              <form class="form-horizontal" action = "login.php" method ="POST">
+                  <div class="form-group">
+                        <div class="col-sm-7">
+                          <input type="email" class="form-control" id="useremail" placeholder="Enter email" name="loginemail" required>
+                        </div>
+                        <div class="col-sm-7">
+                          <input type="password" class="form-control" id="userpassword" placeholder="Enter password" name="loginpassword" required>
+                        </div>
+                        <div class="form-group">        
+                        <div class="col-sm-offset-1 col-sm-10">
+                            <button type="submit" class="btn btn-default">Login</button>
+                          </div>
+                        </div>
+                    </div>
+                </form>
+    </div>
+
+</div>
+
+</body>
+</html>

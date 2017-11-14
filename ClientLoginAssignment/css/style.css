@@ -1,0 +1,213 @@
+ @media screen and (max-width: 568px) {
+        #useremail, #userpassword{
+            margin-left: 0px;
+        }
+        .container{
+        max-width: 90%;
+        margin-top: 8%;
+        border:groove;
+        border-color: rgb(3, 1, 1);
+        border-radius: 15px 50px 30px;
+        background-color: #25215f;
+        }
+        .container:hover{
+        transition: all 3000ms ease-in-out;
+        transition: all 3000ms ease-out;
+        transform: scale(1.03);
+    }
+    body{
+        background-color: rgb(213, 216, 213);
+    }
+    h2{
+        text-align: center;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+    a {
+        color: rgb(228, 226, 226);
+        text-decoration: none;
+    }
+    a:hover {
+        color: #474747;
+    }
+    h3{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 3px;
+        color: rgb(239, 239, 248);
+    }
+    .tab-content{
+        max-width: 85%;
+        text-align: center;
+        margin: 0 auto;
+        -webkit-animation: fadeEffect 5s;
+        animation: fadeEffect 5s;
+    }
+    .nav{
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    .form-control{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: rgb(239, 239, 248);
+    }
+   h5{
+    color: rgb(212, 212, 214); 
+   }
+   .btn{
+    margin-top: 10px; 
+    margin-bottom:-7px;
+    color:#ffffff;
+    background-color: rgb(40, 40, 59);
+   }
+   
+   #error{
+       color: red;
+   }
+   div img{
+       margin-top: 10px;
+   }
+      }
+    @media  (min-width:570px) and (max-width: 1199px) {
+        .container{
+            max-width: 75%;
+            margin-top: 15%;
+            border:groove;
+            border-color: rgb(3, 1, 1);
+            border-radius: 15px 50px 30px;
+            background-color: #25215f;
+        }
+        .container:hover{
+            transition: all 3000ms ease-in-out;
+            transition: all 3000ms ease-out;
+            transform: scale(1.03);
+        }
+        body{
+            background-color: rgb(213, 216, 213);
+        }
+        h2{
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 30px;
+        }
+        a {
+            color: rgb(228, 226, 226);
+            text-decoration: none;
+        }
+        a:hover {
+            color: #474747;
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 3px;
+            color: rgb(239, 239, 248);
+        }
+        .tab-content{
+            max-width: 85%;
+            text-align: center;
+            margin: 0 auto;
+            -webkit-animation: fadeEffect 5s;
+            animation: fadeEffect 5s;
+        }
+        .nav{
+            max-width: 85%;
+            margin: 0 auto;
+        }
+        .form-control{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: rgb(239, 239, 248);
+        }
+       h5{
+        color: rgb(212, 212, 214); 
+       }
+       .btn{
+        margin-top: 10px; 
+        margin-bottom:-7px;
+        color:#ffffff;
+        background-color: rgb(40, 40, 59);
+       }
+       #useremail, #userpassword{
+           margin-left: 100px;
+       }
+       #error{
+           color: red;
+       }
+       div img{
+           margin-top: 10px;
+       }
+
+    }
+
+      @media screen and (min-width: 1200px) {
+    .container{
+        max-width: 40%;
+        margin-top: 8%;
+        border:groove;
+        border-color: rgb(3, 1, 1);
+        border-radius: 15px 50px 30px;
+        background-color: #25215f;
+    }
+    .container:hover{
+        transition: all 3000ms ease-in-out;
+        transition: all 3000ms ease-out;
+        transform: scale(1.03);
+    }
+    body{
+        background-color: rgb(213, 216, 213);
+    }
+    h2{
+        text-align: center;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+    a {
+        color: rgb(228, 226, 226);
+        text-decoration: none;
+    }
+    a:hover {
+        color: #474747;
+    }
+    h3{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 3px;
+        color: rgb(239, 239, 248);
+    }
+    .tab-content{
+        max-width: 85%;
+        text-align: center;
+        margin: 0 auto;
+        -webkit-animation: fadeEffect 5s;
+        animation: fadeEffect 5s;
+    }
+    .nav{
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    .form-control{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: rgb(224, 224, 252);
+    }
+    h5{
+        color: rgb(212, 212, 214); 
+   }
+   .btn{
+        margin-top: 10px; 
+        margin-bottom:-7px;
+        color:#ffffff;
+        background-color: rgb(40, 40, 59);
+   }
+   #useremail, #userpassword{
+       margin-left: 100px;
+   }
+   #error{
+       color: red;
+   }
+   div img{
+       margin-top: 10px;
+   }
+      }
